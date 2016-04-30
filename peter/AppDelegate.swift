@@ -1,21 +1,29 @@
 //
 //  AppDelegate.swift
-//  peter
+//  Demo
 //
-//  Created by 傅譯賢 on 2016/4/30.
-//  Copyright © 2016年 傅譯賢. All rights reserved.
+//  Created by Peter Pan on 3/4/16.
+//  Copyright © 2016 Peter Pan. All rights reserved.
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var player:AVAudioPlayer!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //let NSBundle.mainBundle().pathForResource("", ofType: nil)
+        let url = NSBundle.mainBundle().URLForResource("ukulele", withExtension: "mp3")
+        try! self.player = AVAudioPlayer(contentsOfURL: url!)
+        self.player.numberOfLoops = -1
+        self.player.play()
+        
         return true
     }
 

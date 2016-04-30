@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9083B2B91CD459EE0037391F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9083B2B81CD459EE0037391F /* AppDelegate.swift */; };
+		9033C85A1CD4A96C0018B661 /* ukulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9033C8591CD4A96C0018B661 /* ukulele.mp3 */; };
+		9033C85C1CD4A9E40018B661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9033C85B1CD4A9E40018B661 /* AppDelegate.swift */; };
 		9083B2BB1CD459EE0037391F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9083B2BA1CD459EE0037391F /* ViewController.swift */; };
 		9083B2BE1CD459EE0037391F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9083B2BC1CD459EE0037391F /* Main.storyboard */; };
 		9083B2C01CD459EE0037391F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9083B2BF1CD459EE0037391F /* Assets.xcassets */; };
@@ -15,8 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9033C8591CD4A96C0018B661 /* ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ukulele.mp3; sourceTree = "<group>"; };
+		9033C85B1CD4A9E40018B661 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9083B2B51CD459EE0037391F /* peter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9083B2B81CD459EE0037391F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9083B2BA1CD459EE0037391F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9083B2BD1CD459EE0037391F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9083B2BF1CD459EE0037391F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +56,8 @@
 		9083B2B71CD459EE0037391F /* peter */ = {
 			isa = PBXGroup;
 			children = (
-				9083B2B81CD459EE0037391F /* AppDelegate.swift */,
+				9033C85B1CD4A9E40018B661 /* AppDelegate.swift */,
+				9033C8591CD4A96C0018B661 /* ukulele.mp3 */,
 				9083B2BA1CD459EE0037391F /* ViewController.swift */,
 				9083B2BC1CD459EE0037391F /* Main.storyboard */,
 				9083B2BF1CD459EE0037391F /* Assets.xcassets */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					9083B2B41CD459EE0037391F = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8NL233ZSXK;
 					};
 				};
 			};
@@ -122,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9033C85A1CD4A96C0018B661 /* ukulele.mp3 in Resources */,
 				9083B2C31CD459EE0037391F /* LaunchScreen.storyboard in Resources */,
 				9083B2C01CD459EE0037391F /* Assets.xcassets in Resources */,
 				9083B2BE1CD459EE0037391F /* Main.storyboard in Resources */,
@@ -135,8 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9033C85C1CD4A9E40018B661 /* AppDelegate.swift in Sources */,
 				9083B2BB1CD459EE0037391F /* ViewController.swift in Sources */,
-				9083B2B91CD459EE0037391F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +254,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = peter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.peter.peter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gisanfu.peter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -260,9 +266,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = peter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.peter.peter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gisanfu.peter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -286,6 +293,7 @@
 				9083B2C91CD459EE0037391F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
